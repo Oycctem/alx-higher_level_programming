@@ -5,4 +5,4 @@ a = 1
 b = 2
 
 output = add_0.add(a, b)
-print(output)
+print("{} + {} = {]".format(a, b, output))
