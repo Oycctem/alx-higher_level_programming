@@ -4,7 +4,6 @@ if __name__ == "__main__":
 
 a = 10
 b = 5
-
 add_result = add(a, b)
 print("{} + {} = {}".format(a, b, add_result))
 sub_result = sub(a, b)
