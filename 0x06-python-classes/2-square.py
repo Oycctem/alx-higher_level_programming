@@ -3,7 +3,7 @@
 
 class Square:
     """Class Square"""
-    def _init__(self, __size=None):
+    def _init__(self, size=None):
         if type(size) != int:
             raise TypeError("size must be an integer")
         elif size < 0:
