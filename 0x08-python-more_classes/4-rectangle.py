@@ -51,7 +51,7 @@ class Rectangle:
         """Rectangle as a string"""
         if self.__height == 0 or self.__width == 0:
             return ""
-        patter = self.__width * "#"
+        pattern = self.__width * "#"
         rectangle = ""
         for i in range(self.__height):
             rectangle += pattern
@@ -62,4 +62,4 @@ class Rectangle:
 
     def __repr__(self):
         """string representation"""
-        return "Rectangle({}, {}".format(self.width, self.height)
+        return "Rectangle({}, {})".format(self.width, self.height)
