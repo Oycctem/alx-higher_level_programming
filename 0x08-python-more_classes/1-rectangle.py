@@ -30,7 +30,7 @@ class Rectangle:
 
     @height.setter
     def height(self, value):
-        """the height setter fucntion"""
+        """the width setter fucntion"""
         if not isinstance(value, int):
             raise TypeError("height must be an interger")
         if value < 0:
