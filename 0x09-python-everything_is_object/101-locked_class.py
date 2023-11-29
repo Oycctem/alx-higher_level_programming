@@ -1,6 +1,5 @@
 #!/usr/bin/python3
+"""defining a LockedClassé"""
 class LockedClass:
+    """rarazrazrazraz"""
     __slots__ = 'first_name'
-
-    def __init__(self, first_name=None):
-        self.first_name = first_name
