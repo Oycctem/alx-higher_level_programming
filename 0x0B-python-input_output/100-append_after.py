@@ -5,11 +5,11 @@
 def append_after(filename="", search_string="", new_string=""):
     """inserts the texts"""
     text = ""
-    with open(filename) as r:
-        for line in r:
-            text += l
-            if search_string in l:
+    with open(filename) as read:
+        for line in read:
+            text += line
+            if search_string in line:
                 text += NewStr
-    with open(filename, "w") as w:
+    with open(filename, "w") as write:
         w.write(text)
 
