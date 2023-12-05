@@ -5,4 +5,4 @@
 def read_file(file="", text=""):
     """writes a string to a text file"""
     with open(file, "w", encoding="utf-8") as file:
-        print(file.write(text))
+        return file.write(text)
