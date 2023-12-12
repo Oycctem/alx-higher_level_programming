@@ -1,10 +1,10 @@
 #!/usr/bin/python3
-'''Rectangle class definition'''
+"""Rectangle class definition"""
 from models.base import Base
 
 
 class Rectangle(Base):
-    '''Define the Rectangle class, inheriting from Base'''
+    """Define the Rectangle class, inheriting from Base"""
 
     def __init__(self, width, height, x=0, y=0, id=None):
         """Initialize a Rectangle"""
@@ -22,7 +22,7 @@ class Rectangle(Base):
     @width.setter
     def width(self, value):
         """Set the width of the rectangle, validating input."""
-        if type(value) != int:
+        if not isinstance(value, int):
             raise TypeError("width must be an integer")
         if value <= 0:
             raise ValueError("width must be > 0")
@@ -36,7 +36,7 @@ class Rectangle(Base):
     @height.setter
     def height(self, value):
         """Set the height of the rectangle, validating input."""
-        if type(value) != int:
+        if not isinstance(value, int):
             raise TypeError("height must be an integer")
         if value <= 0:
             raise ValueError("height must be > 0")
@@ -50,7 +50,7 @@ class Rectangle(Base):
     @x.setter
     def x(self, value):
         """Set the x-coordinate of the rectangle, validating input."""
-        if type(value) != int:
+        if not isinstance(value, int):
             raise TypeError("x must be an integer")
         if value < 0:
             raise ValueError("x must be >= 0")
@@ -64,7 +64,7 @@ class Rectangle(Base):
     @y.setter
     def y(self, value):
         """Set the y-coordinate of the rectangle, validating input."""
-        if type(value) != int:
+        if not isinstance(value, int):
             raise TypeError("y must be an integer")
         if value < 0:
             raise ValueError("y must be >= 0")
@@ -108,7 +108,7 @@ class Rectangle(Base):
     @staticmethod
     def setter_validation(attribute, value):
         """Validate setter values for width, height, x, and y."""
-        if type(value) != int:
+        if not isinstance(value, int):
             raise TypeError("{} must be an integer".format(attribute))
         if attribute == "x" or attribute == "y":
             if value < 0:
@@ -120,4 +120,3 @@ class Rectangle(Base):
         """Return a string representation of the rectangle."""
         return "[Rectangle] ({}) {}/{} - {}/{}".format(self.id, self.x, self.y,
                                                        self.width, self.height)
-
