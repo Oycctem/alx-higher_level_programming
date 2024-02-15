@@ -8,18 +8,13 @@ class Rectangle {
   }
 
   print () {
-    let s = '';
-    let a = 0;
-    while (a < this.height) {
-      let b = 0;
-      while (b < this.width) {
-        s += 'X';
-        b++;
-      }
+    for (let i = 0; i < this.height; i++) {
       let s = '';
-      a++;
+      for (let j = 0; j < this.width; j++) {
+        s += 'X';
+      }
+      console.log(s);
     }
-    console.log(s);
   }
 }
 module.exports = Rectangle;
