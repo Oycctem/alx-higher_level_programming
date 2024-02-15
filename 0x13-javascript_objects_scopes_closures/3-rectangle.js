@@ -16,7 +16,7 @@ class Rectangle {
         s += 'X';
         b++;
       }
-      s += '\n';
+      let s = '';
       a++;
     }
     console.log(s);
