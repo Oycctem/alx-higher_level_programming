@@ -16,8 +16,10 @@ class Rectangle {
         s += '\n';
         a++;
       }
-      console.log(s);
+      s += '\n';
+      a++;
     }
+    console.log(s);
   }
 }
 module.exports = Rectangle;
