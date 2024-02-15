@@ -13,7 +13,7 @@ class Rectangle {
     while (a < this.height) {
       const b = 0;
       while (b < this.width) {
-        s += '\n';
+        s += 'X';
         a++;
       }
       s += '\n';
