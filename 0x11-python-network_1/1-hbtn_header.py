@@ -5,10 +5,7 @@ import sys
 
 url = sys.argv[1]
 
-try:
-    with urllib.request.urlopen(url) as response:
-        x_request_id = response.headers.get('X-Request-Id')
-        if x_request_id:
-            print(x_request_id)
-except Exception as e:
-    print("Error fetching URL:", e)
+with urllib.request.urlopen(url) as response:
+    x_request_id = response.headers.get('X-Request-Id')
+    if x_request_id:
+        print(x_request_id)
